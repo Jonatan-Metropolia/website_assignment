@@ -1,0 +1,131 @@
+:root {
+  --blue-dark: #2A4D69;
+  --blue-light: #4B86B4;
+  --beige: #F1E9DB;
+  --text-dark: #1C1C1C;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--beige);
+  color: var(--text-dark);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 70%;
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header {
+  background-color: var(--blue-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--blue-dark);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-home {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+#home_icon {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.nav-home:hover #home_icon {
+  transform: scale(1.1);
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  border: 0.125rem solid var(--blue-light);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--blue-light);
+  color: white;
+  cursor: pointer;
+}
+
+#products-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+
+.product {
+  background-color: white;
+  border: 2px solid var(--blue-light);
+  border-radius: 1rem;
+  width: 25rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.product h2 {
+  color: var(--blue-dark);
+  font-size: 1.3em;
+  margin-top: 1rem;
+}
+
+.product p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+#footer {
+  background-color: var(--blue-light);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9em;
+}
