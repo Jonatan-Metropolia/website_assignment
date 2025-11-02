@@ -1,0 +1,38 @@
+html {
+    font-family: "Bookman Old Style";
+}
+
+.container {
+    width: 25%;
+    height: 50%;
+    margin: auto;
+}
+
+
+header {
+    background-color: lightgreen;
+    width: 150%;
+    height: 20%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: crimson;
+}
+
+li a:hover:after {
+    content: "Hi-hi-hi-haaaa!";
+}
+
+main {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: forestgreen;
+}
+
+
